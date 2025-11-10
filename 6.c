@@ -1,5 +1,8 @@
 <?php
-session_start();
-session_destroy();
-echo "Session destroyed successfully";
+$conn = mysqli_connect('localhost', 'root', '', 'school');
+if($conn){
+echo 'Database connected successfully';
+}else{
+echo 'Connection failed';
+}
 ?>

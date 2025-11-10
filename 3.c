@@ -1,4 +1,4 @@
 <?php
-setcookie("user", "", time()-3600);
-echo "Cookie deleted";
+$_GET['user'] = 'vaibhav';
+echo "User is " . $_GET['user'];
 ?>

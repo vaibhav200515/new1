@@ -1,8 +1,13 @@
+<html>
+<body>
+<form method="post" action="">
+Enter your name: <input type="text" name="name">
+<input type="submit" value="Submit">
+</form>
 <?php
-setcookie("user", "vaibhav", time()+3600);
-if(isset($_COOKIE['user'])){
-echo "Cookie Value: " . $_COOKIE['user'];
-}else{
-echo "Cookie Created";
+if($_POST){
+echo "Hello " . $_POST['name'];
 }
 ?>
+</body>
+</html>
